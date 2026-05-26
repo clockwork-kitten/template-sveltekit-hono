@@ -1,0 +1,12 @@
+{
+  "name": "template-sveltekit-hono",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "check": "bun run --cwd packages/client check && bun run --cwd packages/server check",
+    "test": "bun run --cwd packages/client test && bun run --cwd packages/server test",
+    "ci": "bun run check && bun run test",
+    "dev": "bun run --cwd packages/server dev & bun run --cwd packages/client dev"
+  }
+}

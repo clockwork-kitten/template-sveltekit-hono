@@ -1,0 +1,4 @@
+/* Global styles — design tokens and composition layer */
+@import "open-props/props.colors";
+@import "open-props/props.sizes";
+@import "open-props/props.typography";
