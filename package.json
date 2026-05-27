@@ -7,6 +7,7 @@
     "check": "bun run --cwd packages/client check && bun run --cwd packages/server check",
     "test": "bun run --cwd packages/client test && bun run --cwd packages/server test",
     "ci": "bun run check && bun run test",
-    "dev": "bun run --cwd packages/server dev & bun run --cwd packages/client dev"
+    "dev": "bun run --cwd packages/server dev & bun run --cwd packages/client dev",
+    "release": "bunx bumpp && git push --tags"
   }
 }
