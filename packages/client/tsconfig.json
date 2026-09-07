@@ -1,4 +1,14 @@
 {
-  "extends": "@josephcarey/tsconfig/sveltekit.json",
-  "include": ["src/**/*", "svelte.config.js", "vite.config.ts", ".svelte-kit/tsconfig.json"]
+  "extends": "./.svelte-kit/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "bundler"
+  }
 }

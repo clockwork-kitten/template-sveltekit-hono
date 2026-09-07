@@ -1,7 +1,11 @@
 {
-  "extends": "@josephcarey/tsconfig/base.json",
-  "include": ["src/**/*"],
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
     "outDir": "dist"
-  }
+  },
+  "include": ["src/**/*"]
 }
